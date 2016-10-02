@@ -8,17 +8,17 @@ Page({
     userInfo: {}
   },
   //事件处理函数
-  bindViewTap: function() {
+  gotoDetail: function( e ) {
+		var data = e.currentTarget.dataset;
+		console.log( data.itemId )	
     wx.navigateTo({
-      url: '../logs/logs'
+      url: `../detail/detail?id=${data.itemId}`
     })
   },
   onLoad: function () {
-    console.log('onLoad11111')
 		var that = this
 		
 		zhihu.fetchData( 'news/latest' ).then( ( data ) => {
-		  console.log( 'bbbbb', data	)
 			data.stories.forEach( ( story ) => {
 			  story.images[ 0 ] = story.images[ 0 ].replace( /pic\d/, 'pic3' );
 			} )

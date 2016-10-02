@@ -1,0 +1,5 @@
+<view class="header">
+  <image class="main-image" src="{{ image }}" mode="aspectFill">
+	  <text class="title">{{ title }}</text>
+	</image> 
+</view>

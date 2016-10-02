@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <!-- 循环热文列表 -->
-  <view class="list-item" data="{{ item }}" wx:for="{{ items }}">
+  <view class="list-item" data-item-id="{{ item.id }}" bindtap="gotoDetail" data="{{ item }}" wx:for="{{ items }}">
 		<view class="item">
 		  <text class="desc">{{ item.title }}</text>
 	    <image class="thumbnail" mode="aspectFill" src="{{ item.images[0] }}"></image>
