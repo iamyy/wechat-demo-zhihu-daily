@@ -4,4 +4,4 @@
 ![image](https://raw.githubusercontent.com/iamyy/wechat-demo-zhihu-daily/master/others/images/screen_shoot2.png)
 
 ## TODOs
-* 详情页
+* html -> wxml
