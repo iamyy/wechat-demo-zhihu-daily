@@ -3,3 +3,6 @@
 	  <text class="title">{{ title }}</text>
 	</image> 
 </view>
+<view>
+  需要实现 html -> wxml
+</view>
